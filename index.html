@@ -9,12 +9,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/aos/aos.css" rel="stylesheet">
 
     <title>Events - Industry Cell</title>
 </head>
 
 <body>
 
+    <!-- temporary navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -53,66 +55,72 @@
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
 
 
     <main id="main">
 
-        <section class="container">
-            <div class="Events">
-                <span>Events</span>
-                <h2>Events</h2>
-            </div>
+        <section class="Events">
+            <div class="container">
+                <div class="titleName">
+                    <span>Events</span>
+                    <h2>Events</h2>
+                </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fad-up">
-                    <div class="box">
-                        <div class="icon-box">
-                            <span class="iconify" data-icon="ant-design:code-filled" data-width="100" data-height="100"></span>
-                            <a href="productathon.html">
-                                <h4>Productathon'21</h4>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <p><b>48 hour hackathon event, software and simulation based design sprint event</b></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fad-up">
-                    <div class="box">
-                        <div class="icon-box">
-                            <span class="iconify" data-icon="bx:bxs-business" data-width="100" data-height="100"></span>
-                            <a href="productathon.html">
-                                <h4>B-Plan</h4>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <b>A event which includes pitching business ideas with accurate financial and product lineup</b>
+                <!-- events grid -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up">
+                        <div class="box">
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="iconify" data-icon="ant-design:code-filled" data-width="100" data-height="100"></i>
+                                </div>
+                                <a href="productathon.html">
+                                    <h4>Productathon'21</h4>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p><b>48 hour hackathon event, software and simulation based design sprint event</b></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fad-up">
-                    <div class="box">
-                        <div class="icon-box">
-                            <span class="iconify" data-icon="iconoir:leaderboard-star" data-width="100" data-height="100"></span>
-                            <a href="productathon.html">
-                                <h4>Young leaders</h4>
-                            </a>
-                        </div>
-                        <div class="text">
-                            <b>working and managing a team of people working on a project in a way to get it done in the best way possible</b>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="150">
+                        <div class="box">
+                            <div class="icon-box">
+                                <span class="iconify" data-icon="bx:bxs-business" data-width="100" data-height="100"></span>
+                                <a href="productathon.html">
+                                    <h4>B-Plan</h4>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <b>A event which includes pitching business ideas with accurate financial and product lineup</b>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 last" data-aos="fad-up">
-                    <div class="box">
-                        <div class="icon-box">
-                            <span class="iconify" data-icon="whh:stocks" data-width="100" data-height="100"></span>
-                            <a href="productathon.html">
-                                <h4>Stock Hunt</h4>
-                            </a>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up">
+                        <div class="box">
+                            <div class="icon-box">
+                                <span class="iconify" data-icon="iconoir:leaderboard-star" data-width="100" data-height="100"></span>
+                                <a href="productathon.html">
+                                    <h4>Young leaders</h4>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <b>working and managing a team of people working on a project in a way to get it done in the best way possible</b>
+                            </div>
                         </div>
-                        <div class="text">
-                            <b>An online event, aimed at testing investment skills of students</b>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 last" data-aos="fade-up">
+                        <div class="box">
+                            <div class="icon-box">
+                                <span class="iconify" data-icon="whh:stocks" data-width="100" data-height="100"></span>
+                                <a href="productathon.html">
+                                    <h4>Stock Hunt</h4>
+                                </a>
+                            </div>
+                            <div class="text">
+                                <b>An online event, aimed at testing investment skills of students</b>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,10 +133,15 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-
+    <script src="assets/aos/aos.js"></script>
+    <script src="assets/js/index.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <
+        script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity = "sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin = "anonymous" >
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
 </body>
