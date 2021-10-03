@@ -105,9 +105,12 @@ a:visited {
     background: #e82d2d;
 }
 
-.icon-box:hover h4 a,
-.icon-box:hover p {
-    color: #fff;
+.icon-box:hover h4 {
+    color: white;
+}
+
+.icon-box:hover span {
+    color: white;
 }
 
 a:hover,
