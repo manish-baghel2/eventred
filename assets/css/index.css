@@ -137,3 +137,11 @@
      margin-left: auto;
      margin-right: auto;
  }
+ 
+ @media screen and (max-width: 800px) {
+     .left,
+     .main,
+     .right {
+         width: 100%;
+     }
+ }
